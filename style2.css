@@ -1,0 +1,116 @@
+
+		
+			#barOnTop1 {
+			
+				width:1000px;
+				margin:0 auto;
+				height:40px;
+			}
+			#form-block { 
+			background-color: white;
+			}
+			#color {
+				
+				background-color: white;
+				
+			}
+			.peopleCarouselImg img {
+  width: auto;
+  height: 225px;
+  max-height: 225px;
+}
+.carousel {
+  max-height: 300px;
+  max-width: 700px;
+  overflow: hidden;
+}  
+
+  .item img {
+    width: 100%;
+    height: auto;
+  }
+}
+			
+			body {
+			
+				margin: 0;
+				padding: 0;
+				font-family: Helvetica, Arial, sans-serif;
+			}
+			
+			#logo {
+			
+				width: 140px;
+				height:140px;
+				margin-top:8px;
+				float:left;
+			}
+			.logo-image {
+				width: 49px;
+				height:60px;
+				margin-top:15px;
+				float:left;
+			}
+			.barOnTop {
+				float:left;
+				margin-top: 30px;
+				margin-left:10px;
+				font-size:14;
+				border-left: solid;
+			}
+			.clear {
+				clear:both;
+			}
+			p {
+				
+			}
+			
+			span {
+				margin-top:23px;
+				font-weight: bold;
+			
+			}
+			.align {
+				
+				margin: 0 auto;
+				border: solid;
+			}
+			#searchBar {
+				background-color: #A9A9A9;
+				border: none;
+				font-weight: bold;
+				font-size: 14px;
+				padding: 5px;
+				margin-top:25px;
+				margin-left:5px;
+			}
+			#searchButton {
+			margin-left:80px;
+			margin-top: 5px;
+			padding-left:10px;
+			}
+			.clear {
+				clear:both;
+			}
+			#contactUs {
+				font-size: 50px;
+				text-align:center;
+			
+			}
+			#service {
+				font-weight:bold;
+			}
+			#form {
+				margin-left:200px;
+				margin-right: 200px;
+			}
+			body {
+  background-image: url("form1.jpg");
+  opacity: 0.7;
+  background-repeat: no-repeat;
+ -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+}

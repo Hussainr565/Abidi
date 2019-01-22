@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-us" ng-app="myApp">
+	<head>
+		<title>Abidi Enterprises</title> 
+		
+		<link rel="stylesheet" href="style4.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+<script src="angular.min.js"></script>
+<script src="repeat.js"></script>
+
+
+
+	
+	</head>
+
+	<body>
+		<div id="color">
+		<div id="barOnTop1">
+			<img id="logo" class="logo-image" src="Images\Abidi 
+logo.jpg">
+			
+			<a href="abdi.html"><div id="About-Us!" class="barOnTop"> 
+				<img class="logo-image" src="Images\aboutUs.jpg">
+				<span style="float:left">&nbsp About<br> &nbsp &nbsp 
+&nbsp Us!</span>
+			</div></a>
+			
+			<a href="rates.html"><div id="rates" class="barOnTop"> 
+			
+				<img id="rate-image" class="logo-image" 
+src="Images\rate.png">
+				<span style="float:left">Construction<br> &nbsp &nbsp 
+&nbsp Rates</span>
+			</div></a>
+			<a href="current.html"><div id="current-Projects" class="barOnTop"> 
+				<img id="projectLogo" class="logo-image" 
+src="Images\projectLogo.jpg">
+				<span style="float:left">&nbsp Current<br>&nbsp 
+Projects!</span></a>
+				</div>
+			<a href="past.html"><div id="past-Projects" class="barOnTop"> 
+				<img id="projectLogoPast" class="logo-image" 
+src="Images\pastProjects.jpg">
+				<span style="float:left">&nbsp Past<br>&nbsp 
+Projects!</span></a>
+			</div>
+			
+			<a href="form.html"><div id="contact-us" class="barOnTop"> 
+				<img id="projectLogoPast" class="logo-image" 
+src="Images\contactUs.jpg">
+				<span style="float:left">&nbsp Contact<br>&nbsp &nbsp 
+&nbsp Us!</span>
+			</div></a>
+			<div class="barOnTop">
+				<input id="searchBar" type="text" placeholder="Search">
+				<br><button id="searchButton">Go!</button>
+			</div>
+		</div>
+		<div class="clear"></div>
+			<hr>
+
+                <h1 class="display-4">Rate for 1 Kanal house with material</h1>
+                
+				
+                 <div ng-controller="rates">
+        <p><div   ng-repeat="trophy in trophies">
+            <p><img class="doc" style="border: solid" ng-model="trophy" ng-src="Images\{{trophy}}.jpg" />`</p>
+			<br>
+	<br>
+	<br>
+	<br>
+        </div></p>
+		
+	<br>
+	<br>
+	<br>
+	<br>
+	
+		
+	</body>
+</html>

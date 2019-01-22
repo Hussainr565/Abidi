@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-us" ng-app="myapp">
+	<head>
+		<title>Abidi Enterprises</title> 
+		
+		<link rel="stylesheet" href="style2.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+<script src="angular.min.js"></script>
+<script src="app.js"></script>
+
+
+
+	
+	</head>
+
+	<body>
+		<div id="color">
+		<div id="barOnTop1">
+			<img id="logo" class="logo-image" src="Images\Abidi 
+logo.jpg">
+			
+			<a href="abdi.html"><div id="About-Us!" class="barOnTop"> 
+				<img class="logo-image" src="Images\aboutUs.jpg">
+				<span style="float:left">&nbsp About<br> &nbsp &nbsp 
+&nbsp Us!</span>
+			</div></a>
+			
+			<a href="rates.html"><div id="rates" class="barOnTop"> 
+			
+				<img id="rate-image" class="logo-image" 
+src="Images\rate.png">
+				<span style="float:left">Construction<br> &nbsp &nbsp 
+&nbsp Rates</span>
+			</div></a>
+			
+			<a href="current.html"><div id="current-Projects" class="barOnTop"> 
+				<img id="projectLogo" class="logo-image" 
+src="Images\projectLogo.jpg">
+				<span style="float:left">&nbsp Current<br>&nbsp 
+Projects!</span></a>
+				</div>
+			<a href="past.html"><div id="past-Projects" class="barOnTop"> 
+				<img id="projectLogoPast" class="logo-image" 
+src="Images\pastProjects.jpg">
+				<span style="float:left">&nbsp Past<br>&nbsp 
+Projects!</span></a>
+			</div>
+			
+			<a href="form.html"><div id="contact-us" class="barOnTop"> 
+				<img id="projectLogoPast" class="logo-image" 
+src="Images\contactUs.jpg">
+				<span style="float:left">&nbsp Contact<br>&nbsp &nbsp 
+&nbsp Us!</span>
+			</div></a>
+			<div class="barOnTop">
+				<input id="searchBar" type="text" placeholder="Search">
+				<br><button id="searchButton">Go!</button>
+			</div>
+		</div>
+		
+		<div class="clear"></div>
+			<hr>
+			
+			
+			
+			
+		</div id="color">
+			<p id="contactUs"><br><br>&nbsp Contact us at 03454349994 or fill in the form below and we will contact you!</p>
+			<form id="form" ng-submit="submit()" ng-controller="ExampleController">
+			<div class="row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">First Name</label>
+      <input type="text" class="form-control" id="inputEmail4" placeholder="First Name" class="form-block" ng-model="detail.first">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">Last Name</label>
+      <input type="text" class="form-control" id="inputPassword4" placeholder="Last Name" class="form-block" ng-model="detail.last">
+    </div>
+  </div>
+	
+				<div class="row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Email</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Email" class="form-block" ng-model="detail.email">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">Cell Number</label>
+      <input type="text" class="form-control" id="inputPassword4" placeholder="Cell Number" class="form-block" ng-model="detail.cell">
+	   <div class="alert" ng-class="{ 'alert-warning': detail.cell.length < characters,}" ng-if="detail.cell.length < characters">
+                
+                    <div ng-show="detail.cell.length < characters">
+                        You have less than 9 characters!
+                    </div>
+    </div>
+	 
+  </div>
+
+  <div class="form-group">
+    <label for="inputAddress">Address</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="House 1B HBFC..." id="searchBar" class="form-block" ng-model="detail.add1">
+  </div>
+  <div class="form-group">
+    <label for="inputAddress2">Address 2</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" class="form-block" ng-model="detail.add2">
+  </div>
+  <div class="row">
+    <div class="form-group col-md-6">
+      <label for="inputCity">City</label>
+      <input type="text" class="form-control" id="inputCity" class="form-block" ng-model="detail.city">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputState">Province</label>
+      <select id="inputState" class="form-control">
+        <option selected>Choose...</option>
+        <option>Punjab</option>
+		<option>KPK</option>
+		<option>Balochistan</option>
+		<option>Sindh</option>
+      </select>
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputZip">Postal Code</label>
+      <input type="text" class="form-control" id="inputZip" id="form-block" ng-model="detail.postaCode">
+    </div>
+  </div>
+  
+
+	
+			
+				<div> <label for="exampleInputEmail1"> <br>How did you get to know about our firm?:</label>
+				<select class="form-control form-control-sm">
+			
+					<option>Friends or Family</option>
+					<option>Social Media (Facebook, Instagram etc.)</option>
+				</select>
+				<label for="exampleInputPassword1">Others, please specify: <input class="form-control form-control-lg" type="text" class="form-control" id="exampleInputPassword1"></label>
+				<div class="form-check">
+				<label class="form-check-label" for="exampleCheck1">Check me out</label>
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+  </div>
+			</div>
+	
+		
+			 <button type="submit" class="btn btn-primary" ng-click="submit">Submit</button>
+			 <pre>list={{list}}</pre>
+		</form>
+		
+			
+
+	</body>
+
+</html>
